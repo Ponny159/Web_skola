@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:sans-serif;
+    color:black;
+    
+}
+
+nav{    
+    position: fixed;    
+    width:100%;
+    display:flex;
+    height: 6vh;
+    background:rgb(46, 46, 46);    
+    font-family: 'David Libre', serif;
+    border-bottom: 1px solid black;
+    z-index: 1;
+}
+
+nav #active{
+    background:white;
+}
+
+nav h1{
+    margin:auto;    
+    color:white;
+    font-size: 3em;
+}
+
+.nav-links{
+    display:flex;
+    list-style: none;
+    width:40%;
+    height:100%;
+    align-items: center;
+    margin-left: auto;
+    margin-right:2%;    
+    text-align: center;     
+}
+
+.heading{      
+    margin-left:auto;
+    display:flex;
+    align-items: center; 
+    justify-content: flex-end;    
+    color:white;
+    font-size:3em;  
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 0 rgb(175, 175, 175),
+                 2px 2px 0 rgba(150,150,150),
+                 3px 3px 0 rgba(100,100,100);
+    margin-bottom: 0.2em;
+}
+
+.icon{    
+   height:100%;    
+   padding-left:15%;   
+}
+
+.icon img{   
+    height:100%;
+}
+
+
+.nav-links a{     
+    color:rgb(247, 32, 132);
+    text-decoration:none;
+    font-size:1.2em;     
+    width:25%;     
+    border-right:1px dotted rgb(247, 32, 132);   
+    letter-spacing: 2px;
+}
+
+.nav-links a:hover{
+    background: white;
+    color: rgb(247, 32, 132);
+    text-decoration: underline;
+}
+
+.nav-links a:first-child{
+    border-left:1px dotted rgb(247, 32, 132);
+}
+
+.bgimg{
+    background-image: url('img/bckg.jpg');
+    height: 100vh;
+    opacity: 0.9;
+    position: relative;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.bgimg .text{   
+    width:100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: fixed;
+    top:45%;    
+    color:rgb(255, 255, 255);
+    font-size:4.5em;
+    opacity:0.7;
+    text-shadow: 0 0 20px #e4519b, 0 0 25px #e4519b;
+}
+
+.black{
+    width:100%;
+    height:100%;
+    background:black;
+    opacity:0.8;
+}
+
+.section1{
+    position:relative;
+    height: 80vh;
+    width:100%;
+    background:white;
+}
+
+.section1 .text{
+    position:absolute;
+    width:50%;
+    text-align:center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    margin:auto;
+    font-size:1.3em;
+}
+
+footer{
+    position: relative;;
+    width:100%;
+    height:20vh;
+    background:black;
+    color:white;      
+}
+
+footer p{
+    position:absolute;     
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding:0.5em;
+    font-size:1.3em;
+    border:1px solid white;
+}
+
+table{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);   
+    text-align:center;     
+    border-collapse: collapse;
+}
+
+td{
+    min-width: 10em;
+    border: 1px solid black;
+}
+
+.table{
+    position:relative;
+    width:100%;
+    height:80vh;
+}
+
+table img{
+    display:block;
+    width:200px;
+    height:auto;   
+    padding:0;
+    margin:0;     
+}
+
+.seznamy{
+    width:100%;
+    height:80vh;
+    position:relative;
+}
+
+.szn{    
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);  
+    text-align:center;
+}
+
+.szn h1{
+    margin-bottom:1em;
+}
+
+ul{
+    margin-top:1em;
+}
+
+li{
+  width:100%;
+  height:2em;       
+}
+
+.image{
+    width:100%;
+    height:100vh;
+}
+
+.image img{
+    width:100%;
+    height:100%;
+    cursor:pointer;
+}
+
+.vypocet{
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:30vh;
+}
+
+.vypocet label, input{
+    margin-right: 1em;    
+}
+
+.vypocet input{
+    color: rgb(247, 32, 132);
+    font-size: 1.05em;
+}
+
+.vypocet input[type = button]{
+    cursor: pointer; 
+    border: 2px solid black; 
+    padding: 2px; 
+    border-radius: 5px;
+}
+
+.odkaz{
+   position:absolute;
+   bottom:10%;    
+}
+
+.odkaz a{
+    text-decoration: none;
+    color:black;
+    font-size:2em;
+}
+
+.odkaz a:hover{
+    color: rgb(247, 32, 132);
+    text-decoration: underline;
+}
+
+.eq{
+    display:none;
+}
+
+form{
+    padding-top: 20em;
+    padding-bottom: 20em;
+    width:100%;
+    text-align:center;    
+}
+
+form input{
+    margin-top:1em;
+}
+
+#form{
+    padding-top:5em;
+    width:100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1600px){
+    .line{
+        width:2.5em;
+        height:0.3em;
+        background:white;
+        margin:0.5em;
+    }
+
+    nav{
+        position: fixed;    
+        width:100%;        
+    }
+
+    .hamburger{
+        position:absolute;
+        cursor:pointer;
+        right:5%;
+        top:50%;
+        transform:translate(-5%, -50%);
+        z-index:2;
+    }
+
+    .nav-links{
+        position: fixed;
+        background:black; 
+        opacity: 0.9;
+        height: 100vh;
+        width:100%;
+        flex-direction: column;
+        clip-path: circle(7em at 90% -20%);
+        -webkit-clip-path: circle(7em at 90% -20%);
+        transition: all 1.4s ease;     
+        pointer-events: none;   
+        justify-content: space-around;
+        
+    }
+
+    .nav-links a{        
+        width: 101%;  
+        font-size:2em;      
+    }    
+
+    .nav-links.open{
+        clip-path: circle(120em at 90% -10%);
+        -webkit-clip-path: circle(120em at 90% -10%);
+        pointer-events: all;
+    }   
+    
+    .heading{
+        margin:auto;
+    }
+    
+    .bgimg .text{
+        font-size:3.5em;
+    }
+    
+    .section1{
+        height:100vh;
+    }
+    
+    .section1 .text{
+        font-size:0.9em;
+    }
+    
+    footer p{
+        font-size:1em;
+    }  
+    
+    .table{
+        height:220vh;
+        font-size: 0.5em;
+    }
+
+    table td{
+        min-width: 6em;
+    }
+    
+    .image{
+        width:100%;
+        height:auto;
+        padding-top:3.5em;
+    }
+
+    .vypocet{
+        flex-wrap: wrap;
+        flex-direction: row;
+        font-size: 0.9em; 
+        height: 47vh;          
+    }    
+
+    .vypocet input{
+        width:6em;
+    }
+
+    .vypocet input, label{
+        padding:0;
+        margin:2px;        
+    }
+
+    .vypocet .odkaz{
+        bottom:0;
+    }
+
+    .szn{
+        font-size: 0.9em;
+        width: 80%;
+    }   
+    .szn h1{
+        font-size: 1.3em;
+    }  
+
+    nav h1{
+        font-size: 0.9em;
+    }
+}
