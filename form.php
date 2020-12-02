@@ -36,24 +36,27 @@
         echo "Vaše datum narození: ". $_REQUEST['Datum'] ."<br>";
         echo "Vaše výška: ". $_REQUEST['Vyska'] ."<br>";
         echo "Vaše oblíbená barva: ". $_REQUEST['Barva'] ."<br><br>";
+
         
-        $val = intval($_GET['Jmeno']);
-        echo "<div class=\"table\">";
-        echo "<table border=\"1\">";        
-        for($j = 0; $j < 3; $j++){
-            echo "<tr>";
-            for($k = 0; $k < 5; $k++){
-                if(ctype_digit($_GET['Jmeno'])){
-                    echo "<td>{$val}</td>";
-                    $val++;
+        if(isset($_GET['Jmeno']) || isset($_GET['Prijmeni']) || isset($_GET['Datum']) || isset($_GET['Vyska']) || isset($_GET['Barva'])){
+            $val = intval($_GET['Jmeno']);
+            echo "<div class=\"table\">";
+            echo "<table border=\"1\">";        
+            for($j = 0; $j < 3; $j++){
+                echo "<tr>";
+                for($k = 0; $k < 5; $k++){
+                    if(ctype_digit($_GET['Jmeno'])){
+                        echo "<td>{$val}</td>";
+                        $val++;
+                    }
+                    else
+                        echo "<td>" . $_GET['Jmeno'] . "</td>";
                 }
-                else
-                    echo "<td>" . $_GET['Jmeno'] . "</td>";
+                echo "</tr>";
             }
-            echo "</tr>";
+            echo "</table>";
+            echo "</div>";
         }
-        echo "</table>";
-        echo "</div>";
         ?>
     </div>
     <?php require_once('foot.php'); ?>
