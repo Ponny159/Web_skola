@@ -38,10 +38,10 @@
         echo "Vaše oblíbená barva: ". $_REQUEST['Barva'] ."<br><br>";
 
         
-        if(isset($_GET['Jmeno']) || isset($_GET['Prijmeni']) || isset($_GET['Datum']) || isset($_GET['Vyska']) || isset($_GET['Barva'])){
+        if(isset($_GET['Jmeno'])){
             $val = intval($_GET['Jmeno']);
             echo "<div class=\"table\">";
-            echo "<table border=\"1\">";        
+            echo "<table>";        
             for($j = 0; $j < 3; $j++){
                 echo "<tr>";
                 for($k = 0; $k < 5; $k++){
